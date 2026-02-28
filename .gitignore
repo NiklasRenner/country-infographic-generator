@@ -1,0 +1,7 @@
+target/
+.venv/
+.vscode/
+
+# Source data (large, not tracked)
+raw_data/
+generated/
