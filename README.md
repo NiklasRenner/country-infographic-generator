@@ -11,18 +11,24 @@ cargo build --release -q
 cargo run --release -q -- --dataset datasets/conflicts_feb2026.json
 ```
 
-Or use the shortcut:k
+Or use the shortcut:
 
 ```sh
-.\run.ps1
+.\run.ps1 conflicts_feb2026
 ```
 
 ## Output
 
-Generates two files in `generated/`:
+Generates three files in `generated/`, named after the dataset file:
 
-- `generated/<output>.svg` — vector map (3840×1920)
-- `generated/<output>.png` — rasterized bitmap
+- `generated/<name>_4k.svg` — vector map (3840×1920)
+- `generated/<name>_4k.png` — full-resolution raster (3840×1920)
+- `generated/<name>_hd.png` — downscaled raster (1920×1080)
+
+For example, `--dataset datasets/conflicts_feb2026.json` produces:
+- `conflicts_feb2026_4k.svg`
+- `conflicts_feb2026_4k.png`
+- `conflicts_feb2026_hd.png`
 
 ## Dataset Format
 
@@ -31,7 +37,6 @@ Datasets live in `datasets/` as JSON files:
 ```json
 {
   "title": "World Map — Active Conflicts (February 2026)",
-  "output": "world_map_conflicts",
   "erased_countries": ["SWE"],
   "categories": [
     {
@@ -49,7 +54,6 @@ Datasets live in `datasets/` as JSON files:
 |---|---|---|
 | `title` | yes | Title text rendered on the map |
 | `categories` | yes | Array of color categories (see below) |
-| `output` | no | Output filename without extension (default: `world_map`) |
 | `erased_countries` | no | Array of ISO alpha-3 codes to erase (shown as ocean) |
 
 ### Category Fields
@@ -69,7 +73,6 @@ Country codes match `ISO_A3` or `ADM0_A3` in the GeoJSON data (Natural Earth 50m
 | `conflicts_feb2026.json` | Countries with active armed conflicts |
 | `political_systems.json` | Democracy index classification |
 | `murder_rate.json` | Intentional homicide rate per 100k |
-| `gay_countries.json` | Just Bulgaria |
 
 ## Map Layers
 
@@ -77,7 +80,7 @@ The map is composed of these layers (bottom to top):
 
 1. **Ocean** — solid background + bathymetry relief image
 2. **Graticule** — 30° longitude / 20° latitude grid lines
-3. **Country base** — neutral tan fill for all land
+3. **Country base** — varied earthy fills for all land
 4. **Land mask** — clip-path used by relief overlay
 5. **Glaciated areas** — ice/glacier polygons
 6. **Lakes** — major lake polygons
@@ -99,7 +102,7 @@ Single-file Rust project (`src/main.rs`). All geographic data is embedded at com
 - `processed_data/shaded_relief.png` — land terrain shading
 - `processed_data/ocean_relief.png` — ocean bathymetry
 
-Projection: Mercator, clamped to ±80° latitude.
+Projection: Mercator, clamped to ±80° latitude. The HD variant is rendered by re-rasterizing the SVG at 0.5× scale for vector-quality downscaling. PNGs use maximum zlib compression with adaptive row filtering.
 
 ## Dependencies
 
@@ -109,3 +112,4 @@ Projection: Mercator, clamped to ±80° latitude.
 - `clap` — CLI argument parsing
 - `anyhow` — error handling
 - `base64` — encoding relief PNGs as data URIs
+- `png` — optimized PNG encoding
