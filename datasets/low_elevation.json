@@ -1,0 +1,21 @@
+{
+  "title": "Countries with Highest Point Under 500m",
+  "erased_countries": [],
+  "categories": [
+    {
+      "color": "#1a237e",
+      "label": "Under 100m",
+      "country_codes": ["MDV", "TUV", "MHL", "GMB", "BHS", "NRU", "KIR"]
+    },
+    {
+      "color": "#1565c0",
+      "label": "100 – 300m",
+      "country_codes": ["QAT", "BHR", "SGP", "DNK", "PLW", "MLT", "LTU", "GNB"]
+    },
+    {
+      "color": "#42a5f5",
+      "label": "300 – 500m",
+      "country_codes": ["KWT", "LVA", "EST", "NLD", "BRB", "BLR", "ATG", "MDA"]
+    }
+  ]
+}
