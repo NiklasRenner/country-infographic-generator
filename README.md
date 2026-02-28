@@ -1,5 +1,7 @@
 # country-infographic-generator
 
+![alt text](conflicts_feb2026_4k.png)
+
 A Rust CLI tool that generates world map PNGs with countries colored by a user-provided JSON dataset. Features shaded relief terrain, ocean bathymetry, natural features (glaciers, lakes, rivers), and a clean data-driven legend.
 
 ## Quick Start
