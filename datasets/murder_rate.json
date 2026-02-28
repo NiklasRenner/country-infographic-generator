@@ -1,0 +1,59 @@
+{
+  "title": "World Map — Intentional Homicide Rate per 100k (2024)",
+  "output": "world_map_murder_rate",
+  "categories": [
+    {
+      "color": "#1b5e20",
+      "label": "Very Low (under 1)",
+      "country_codes": [
+        "JPN", "SGP", "IDN", "CHN", "KOR", "BHR", "QAT", "ARE",
+        "OMN", "KWT", "SAU", "HKG", "MAC", "NOR", "CHE", "AUT",
+        "DEU", "SVN", "CZE", "POL", "ISL", "LUX", "ITA", "ESP",
+        "MNE", "HRV", "BIH", "MKD", "GRC", "JOR", "NZL", "AUS",
+        "MYS", "BRN"
+      ]
+    },
+    {
+      "color": "#4caf50",
+      "label": "Low (1 – 3)",
+      "country_codes": [
+        "GBR", "FRA", "CAN", "IRL", "NLD", "BEL", "DNK", "SWE",
+        "FIN", "PRT", "EST", "LVA", "LTU", "SVK", "HUN", "ROU",
+        "BGR", "SRB", "ALB", "GEO", "ARM", "AZE", "TWN", "IND",
+        "BGD", "NPL", "LKA", "THA", "KHM", "LAO", "VNM", "IRN",
+        "ISR", "TUN", "MAR", "DZA", "EGY", "TUR", "UZB", "TKM",
+        "TJK", "KGZ", "MNG", "CYP", "MLT"
+      ]
+    },
+    {
+      "color": "#ffb300",
+      "label": "Moderate (3 – 10)",
+      "country_codes": [
+        "USA", "RUS", "UKR", "BLR", "MDA", "ARG", "URY", "PRY",
+        "CHL", "PER", "BOL", "ECU", "GUY", "SUR", "PAK", "AFG",
+        "IRQ", "LBN", "NGA", "KEN", "TZA", "UGA", "MOZ", "ZMB",
+        "MWI", "ZWE", "BWA", "NAM", "SEN", "MLI", "NER", "BFA",
+        "GHA", "TGO", "BEN", "LBR", "SLE", "GIN", "MRT", "CMR",
+        "GAB", "COG", "AGO", "MDG", "RWA", "BDI", "ETH", "ERI",
+        "SOM", "DJI", "MYA", "PHL", "TLS", "PNG", "FJI", "MMR",
+        "CUB", "DOM", "PAN", "CRI", "NIC"
+      ]
+    },
+    {
+      "color": "#e65100",
+      "label": "High (10 – 30)",
+      "country_codes": [
+        "MEX", "COL", "BRA", "GTM", "HND", "BLZ", "TTO", "GUY",
+        "ZAF", "LSO", "SWZ", "COD", "CAF", "TCD", "SDN", "SSD",
+        "SYR", "YEM", "LBY", "HTI", "PSE"
+      ]
+    },
+    {
+      "color": "#b71c1c",
+      "label": "Very High (30+)",
+      "country_codes": [
+        "SLV", "JAM", "VEN", "GNQ"
+      ]
+    }
+  ]
+}

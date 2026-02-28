@@ -1,0 +1,52 @@
+{
+  "title": "World Map — Political Systems (2026)",
+  "output": "world_map_political_systems",
+  "erased_countries": ["SWE"],
+  "categories": [
+    {
+      "color": "#2e7d32",
+      "label": "Full Democracy",
+      "country_codes": [
+        "NOR", "ISL", "SWE", "DNK", "IRL", "FIN", "NZL", "CHE",
+        "NLD", "LUX", "DEU", "AUT", "AUS", "CAN", "URY", "CRI",
+        "GBR", "JPN", "CHL", "TWN"
+      ]
+    },
+    {
+      "color": "#fdd835",
+      "label": "Flawed Democracy",
+      "country_codes": [
+        "USA", "FRA", "ESP", "PRT", "ITA", "KOR", "BEL", "CZE",
+        "EST", "SVN", "LTU", "LVA", "GRC", "POL", "IND", "BRA",
+        "ARG", "ZAF", "COL", "ROU", "HRV", "PER", "PHL", "IDN",
+        "MNG", "MEX", "BGR", "SVK", "HUN", "CYP", "MLT", "PAN",
+        "DOM", "JAM", "TTO", "GHA", "BWA", "NAM", "TLS", "SRB",
+        "MNE", "ECU", "PRY", "GUY", "SUR", "MYS"
+      ]
+    },
+    {
+      "color": "#e65100",
+      "label": "Hybrid Regime",
+      "country_codes": [
+        "TUR", "UKR", "PAK", "BGD", "NGA", "KEN", "TZA", "UGA",
+        "GTM", "HND", "SLV", "BOL", "TUN", "LBN", "IRQ", "GEO",
+        "MDA", "ALB", "MKD", "BIH", "KGZ", "NPL", "SEN", "ZMB",
+        "MWI", "MDG", "MOZ", "MRT", "LBR", "SLE", "HTI", "NIC",
+        "SGP", "THA", "MMR", "PSE"
+      ]
+    },
+    {
+      "color": "#b71c1c",
+      "label": "Authoritarian",
+      "country_codes": [
+        "CHN", "RUS", "SAU", "IRN", "PRK", "CUB", "VEN", "BLR",
+        "SYR", "EGY", "ARE", "QAT", "BHR", "OMN", "KWT", "JOR",
+        "DZA", "MAR", "SDN", "SSD", "ETH", "ERI", "TKM", "UZB",
+        "TJK", "KAZ", "AZE", "AFG", "YEM", "LBY", "COD", "CMR",
+        "TCD", "GNQ", "GAB", "COG", "CAF", "RWA", "BDI", "AGO",
+        "ZWE", "LAO", "VNM", "KHM", "SOM", "SOL", "MLI", "BFA",
+        "NER", "GIN"
+      ]
+    }
+  ]
+}

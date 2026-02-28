@@ -1,0 +1,16 @@
+{
+  "title": "World Map — Active Conflicts (February 2026)",
+  "output": "world_map_conflicts",
+  "categories": [
+    {
+      "color": "#d32f2f",
+      "label": "Country at War",
+      "country_codes": [
+        "UKR", "RUS", "IRN", "USA", "ISR", "PSE", "SAU", "ARE",
+        "YEM", "SYR", "SDN", "SDS", "MMR", "PAK", "COL", "SOM",
+        "SOL", "COD", "ETH", "NGA", "MLI", "BFA", "NER", "TCD",
+        "MOZ", "AFG", "IRQ", "LBY", "CMR", "LBN"
+      ]
+    }
+  ]
+}
